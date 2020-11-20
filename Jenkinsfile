@@ -7,5 +7,13 @@ pipeline {
       }
     }
 
+    stage('Build') {
+      steps {
+        sh '''
+C:\\Program Files\\Unity -batchmode -nographics -projectPath "$(pwd)" -logFile unitylog.log -quit
+'''
+      }
+    }
+
   }
 }
