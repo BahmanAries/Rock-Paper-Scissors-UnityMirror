@@ -18,10 +18,10 @@ public class BuildScript
         if (!File.Exists("./buildManifest.txt"))
         {
             //There's no buildManifest.txt file set some defaults.
-            PlayerSettings.productName = "Product Name Here";
-            PlayerSettings.companyName = "Luke Parker";
+            PlayerSettings.productName = "RSP";
+            PlayerSettings.companyName = "ESG";
             PlayerSettings.forceSingleInstance = true;
-            PlayerSettings.bundleVersion = "0.0.0.0";
+            PlayerSettings.bundleVersion = "1.0.0.0";
             _buildLocation = "./Build/";
         }
         else
